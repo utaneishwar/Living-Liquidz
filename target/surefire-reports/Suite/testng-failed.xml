@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="extentlistener.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="test.SpiritTest">
+        <methods>
+          <include name="verifyurlofpage"/>
+          <include name="tearDown"/>
+          <include name="SortByAlphabates"/>
+          <include name="createObject"/>
+          <include name="SortByHighPrice"/>
+          <include name="initBrowser"/>
+          <include name="selectProduct"/>
+        </methods>
+      </class> <!-- test.SpiritTest -->
+      <class name="test.BeerTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
+          <include name="BeerSearchTest"/>
+          <include name="ApplyTest"/>
+        </methods>
+      </class> <!-- test.BeerTest -->
+      <class name="test.AddToCartTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createObject"/>
+          <include name="initBrowser"/>
+          <include name="VerifyAddtoCart"/>
+          <include name="SelectItem"/>
+        </methods>
+      </class> <!-- test.AddToCartTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
